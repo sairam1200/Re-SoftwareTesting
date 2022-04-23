@@ -33,4 +33,21 @@ public class TestMain {
         main = new Main();
         assertEquals(4, main.countConsonants("magenta"));
     }
+    //these are unit tests
+    //sairam chikkala
+    @Test
+    public void testCountUpperCase(){
+        main= new Main();
+        assertEquals(2,main.countUpperCase("SpiderBoy"));
+    }
+    @Test
+    public void testCountlowerCase(){
+        main = new Main();
+        assertEquals(3,main.countLowerCase("SPIDERBoy"));
+    }
+    @Test
+    public void testCountOnlyA(){
+        main = new Main();
+        assertEquals(3,main.countOnlyA("AAAhello"));
+    }
 }

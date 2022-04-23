@@ -62,4 +62,33 @@ public class TestMain {
         main =new Main();
         assertEquals(main.lengthWord("Hello"),main.countUpperCase("SaiRam")+ main.countLowerCase("Sail"));
     }
+    //lakshmi srinidh
+    //test case 1
+    //count the numbers in the string
+    @Test
+    public void testcountNumber(){
+        main= new Main();
+        assertEquals(5,main.countNumbers("alpha12345"));
+    }
+    //test case 2
+    // count the spaces in the given string
+    @Test
+    public void testcountSpaces(){
+        main=new Main();
+        assertEquals(3,main.countSpaces("i am lakshmi srinidh"));
+    }
+    //test case 3
+    //count the special symbols in the given string
+    @Test
+    public void testSpecialSymbols(){
+        main=new Main();
+        assertEquals(4,main.countSpecialSymbols("alpha,sre,@/"));
+    }
+    //integration test case 1
+    // test the spaces and numbers
+    @Test
+    public void testSpacesandNumbers(){
+        main=new Main();
+        assertEquals(main.lengthWord("hello"),main.countSpaces("hello world ")+main.countNumbers("srinidh999"));
+    }
 }

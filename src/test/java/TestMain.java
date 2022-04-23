@@ -54,4 +54,12 @@ public class TestMain {
         main= new Main();
         assertEquals(2,main.countOnlyA("Hello man where are you?"));
     }
+    //integration testcases
+    //test case 1
+    //Description :test on both lower and upper case
+    @Test
+    public void testlowerAndUpperCase(){
+        main =new Main();
+        assertEquals(main.lengthWord("Hello"),main.countUpperCase("SaiRam")+ main.countLowerCase("Sail"));
+    }
 }

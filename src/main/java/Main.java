@@ -90,7 +90,7 @@ public class Main {
 
             }
         }
-        return count;
+        return 0;
     }
     //method 2
     //description: count the Spaces in the given string
@@ -115,6 +115,6 @@ public class Main {
                     count=count+1;
                 }
             }
-            return count;
+            return 0;
         }
     }

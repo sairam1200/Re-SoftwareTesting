@@ -20,7 +20,7 @@ public class Main {
             }
         }
 
-        return null;
+        return 0;
     }
 
     public int countConsonants(String word) {

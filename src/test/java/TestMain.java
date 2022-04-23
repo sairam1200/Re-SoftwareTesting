@@ -43,7 +43,7 @@ public class TestMain {
     @Test
     public void testCountlowerCase(){
         main = new Main();
-        assertEquals(3,main.countLowerCase("SPIDERBoy"));
+        assertEquals(2,main.countLowerCase("SPIDERBoy"));
     }
     @Test
     public void testCountOnlyA(){

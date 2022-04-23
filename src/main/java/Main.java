@@ -48,7 +48,7 @@ public class Main {
                 count=count+1;
             }
         }
-        return count;
+        return 0;
     }
     //description : this method  counts the number of lowercases in a string
     public int countLowerCase(String word){
@@ -59,7 +59,7 @@ public class Main {
                 count=count+1;
             }
         }
-        return count;
+        return 0;
     }
     //description: this method counts the number of alphabet A and a
     public int countOnlyA(String word){
@@ -76,6 +76,6 @@ public class Main {
             if (tempChar=='A'||tempChar=='a')
                 count++;
         }
-        return count;
+        return 0;
     }
 }

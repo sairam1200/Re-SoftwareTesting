@@ -33,21 +33,25 @@ public class TestMain {
         main = new Main();
         assertEquals(4, main.countConsonants("magenta"));
     }
-    //these are unit tests
-    //sairam chikkala
+    //sai ram chikkala
+    // test case on the count uppercase
     @Test
     public void testCountUpperCase(){
-        main= new Main();
-        assertEquals(2,main.countUpperCase("SpiderBoy"));
+        main =new Main();
+        assertEquals(2,main.countUpperCase("Hello Man"));
     }
+    //test case 2
+    //this test case consits of the count of lower cases
     @Test
-    public void testCountlowerCase(){
-        main = new Main();
-        assertEquals(2,main.countLowerCase("SPIDERBoy"));
+    public void testCountLowerCase(){
+        main =new Main();
+        assertEquals(4,main.countLowerCase("SaiRam"));
     }
+   //test case 3
+    //this test case consits of the count of the alphabet only A and a
     @Test
     public void testCountOnlyA(){
-        main = new Main();
-        assertEquals(3,main.countOnlyA("AAAhello"));
+        main= new Main();
+        assertEquals(2,main.countOnlyA("Hello man where are you?"));
     }
 }

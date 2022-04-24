@@ -15,7 +15,15 @@ public class Main {
     //Author: Daniel Pliego Gonzalez
     //Description: This function count the vowels of the string that the user give as an input. Test: testCountVowels()
     public int countVowels(String word) {
+        int count=0;
+        char[] wordChars = word.toCharArray();
 
+        for (char chr: wordChars){
+            if(chr=='a'||chr=='A' || chr=='e'||chr=='E' || chr=='i'||chr=='I' || chr=='o'||chr=='O' || chr=='u'||chr=='U'){
+                count=count+1;
+            }
+        }
+        return  count;
     }
 
     //Author: Daniel Pliego Gonzalez

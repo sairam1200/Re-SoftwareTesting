@@ -6,25 +6,20 @@ public class Main {
         System.out.println("Hello");
     }
 
-
+    //Author: Daniel Pliego Gonzalez
+    //Description: This function count the length of the string that the user give as an input. Test: testLengthWord()
     public int lengthWord(String word) {
         return word.length();
     }
 
+    //Author: Daniel Pliego Gonzalez
+    //Description: This function count the vowels of the string that the user give as an input. Test: testCountVowels()
     public int countVowels(String word) {
-        int count = 0;
 
-        char[] wordChars = word.toCharArray();
-
-        for (char chr : wordChars) {
-            if (chr == 'a' || chr == 'A' || chr == 'e' || chr == 'E' || chr == 'i' || chr == 'I' || chr == 'o' || chr == 'O' || chr == 'u' || chr == 'U') {
-                count = count + 1;
-            }
-        }
-
-        return count;
     }
 
+    //Author: Daniel Pliego Gonzalez
+    //Description: This Function count the consonants of the string that the user give as an input. Test: testCountConsonants()
     public int countConsonants(String word) {
         int count = 0;
 

@@ -15,24 +15,36 @@ public class TestMain {
     }
 
     // UNIT TESTS
-
+    //Author: Daniel Pliego Gonzalez
+    //Description: This test count the letters of the string that the user give as an input. Function: lengthWord(String word)
     @Test
     public void testLengthWord() {
         main = new Main();
         assertEquals(5, main.lengthWord("music"));
     }
-
+    //Author: Daniel Pliego Gonzalez
+    //Description: This test count the Vowels of the string that the user give as an input. Function: countVowels(String word)
     @Test
     public void testCountVowels() {
-        main = new Main();
-        assertEquals(3, main.countVowels("magenta"));
+       main = new Main();
+       assertEquals(3, main.countVowels("magenta"));
     }
-
+    //Author: Daniel Pliego Gonzalez
+    //Description: This test count the consonants of the string that the user give as an input. Function: countConsonants(String word)
     @Test
     public void testCountConsonants() {
         main = new Main();
         assertEquals(4, main.countConsonants("magenta"));
     }
+    //INTEGRATION TEST
+    //Author: Daniel Pliego Gonzalez
+    //Description: This Test returns if the lenght of the word is the same os the consonant+vowels
+    @Test
+    public void testVowelsAndConsonants() {
+        main = new Main();
+        assertEquals(main.lengthWord("great"), main.countConsonants("great") + main.countVowels("great"));
+    }
+
     //sai ram chikkala
     // test case on the count uppercase
     @Test

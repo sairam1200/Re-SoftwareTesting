@@ -103,4 +103,31 @@ public class TestMain {
         main=new Main();
         assertEquals(main.lengthWord("hello"),main.countSpaces("hello world ")+main.countNumbers("srinidh999"));
     }
+    //nikhil test case 1
+    //count words starting with vowel
+    @Test
+    public void testCountWordsStartingWithVowels(){
+        main = new Main();
+        assertEquals(1, main.countWordsStartingWithVowels("The quick brown fox jumps over the lazy dog"));
+    }
+    // nikhil test case 2
+    //reverse vowel count test
+    @Test
+    public void testReverseVowelCount(){
+        main = new Main();
+        assertEquals(5,main.reverseVowelCount("aeiou"));
+    }
+    //nikhil test case 3
+    //count only 'b' test
+    @Test
+    public void testCountOnlyB(){
+        main = new Main();
+        assertEquals(1,main.countOnlyB("bat"));
+    }
+    //Integration test
+    @Test
+    public void testNumbersAndSpecialSymbols(){
+        main = new Main();
+        assertEquals(main.lengthWord("he will"), main.countNumbers("1234")+main.countSpecialSymbols("@#,"));
+    }
 }

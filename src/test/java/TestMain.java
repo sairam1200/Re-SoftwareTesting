@@ -46,21 +46,21 @@ public class TestMain {
     }
 
     //sai ram chikkala
-    // test case on the count uppercase
+    // test case on the count uppercase test: testCountUpperCase()
     @Test
     public void testCountUpperCase(){
         main =new Main();
         assertEquals(2,main.countUpperCase("Hello Man"));
     }
     //test case 2
-    //this test case consits of the count of lower cases
+    //this test case consits of the count of lower cases test: testCountLowerCase()
     @Test
     public void testCountLowerCase(){
         main =new Main();
         assertEquals(4,main.countLowerCase("SaiRam"));
     }
    //test case 3
-    //this test case consits of the count of the alphabet only A and a
+    //this test case consits of the count of the alphabet only A and a   test:testCountOnlyA()
     @Test
     public void testCountOnlyA(){
         main= new Main();
@@ -68,40 +68,41 @@ public class TestMain {
     }
     //integration testcases
     //test case 1
-    //Description :test on both lower and upper case
+    //Description :test on both length word and upper case  Test: testLengthAndUpperCase
     @Test
-    public void testlowerAndUpperCase(){
+    public void testLengthAndUpperCase(){
         main =new Main();
-        assertEquals(main.lengthWord("Hello"),main.countUpperCase("SaiRam")+ main.countLowerCase("Sail"));
+        assertEquals(1,main.lengthWord(main.countUpperCaseINT("Sai")));
     }
     //lakshmi srinidh
     //test case 1
-    //count the numbers in the string
+    //count the numbers in the string test: testcountNumber()
     @Test
     public void testcountNumber(){
         main= new Main();
         assertEquals(5,main.countNumbers("alpha12345"));
     }
+
     //test case 2
-    // count the spaces in the given string
+    // count the spaces in the given string test : testcountSpaces()
     @Test
     public void testcountSpaces(){
         main=new Main();
         assertEquals(3,main.countSpaces("i am lakshmi srinidh"));
     }
     //test case 3
-    //count the special symbols in the given string
+    //count the special symbols in the given string test : testSpecialSymbols()
     @Test
     public void testSpecialSymbols(){
         main=new Main();
         assertEquals(4,main.countSpecialSymbols("alpha,sre,@/"));
     }
     //integration test case 1
-    // test the spaces and numbers
+    // test the integration numbers test: testintNumbers()
     @Test
-    public void testSpacesandNumbers(){
+    public void testintNumbers(){
         main=new Main();
-        assertEquals(main.lengthWord("hello"),main.countSpaces("hello world ")+main.countNumbers("srinidh999"));
+        assertEquals(2,main.countNumbers(main.countNumbersINT("123455678912233456")));
     }
     //nikhil test case 1
     //count words starting with vowel

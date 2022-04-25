@@ -1,4 +1,3 @@
-import java.nio.charset.StandardCharsets;
 ///
 public class Main {
 
@@ -42,7 +41,8 @@ public class Main {
         return count;
     }
     //sairam chikkala
-    // description: count the uppercases here
+    //method 1
+    // description: count the uppercases here test: testCountUpperCase()
     public int countUpperCase(String word){
         int count=0;
         char[] wordChars=word.toCharArray();
@@ -53,7 +53,20 @@ public class Main {
         }
         return count;
     }
-    //description : this method  counts the number of lowercases in a string
+    //method 2
+    // description: count the uppercases integer with return value StringValue(int)
+    public String countUpperCaseINT(String word){
+        int count=0;
+        char[] wordChars=word.toCharArray();
+        for(char chr: wordChars){
+            if(Character.isUpperCase(chr)){
+                count=count+1;
+            }
+        }
+        return String.valueOf(count);
+    }
+    //method 3
+    //description : this method  counts the number of lowercases in a string test: testCountLowerCase()
     public int countLowerCase(String word){
         int count=0;
         char[] wordChars=word.toCharArray();
@@ -64,7 +77,8 @@ public class Main {
         }
         return count;
     }
-    //description: this method counts the number of alphabet A and a
+    //method 4
+    //description: this method counts the number of alphabet A and a test:testCountOnlyA()
     public int countOnlyA(String word){
         //temp storing string
         String _word =word;
@@ -95,6 +109,7 @@ public class Main {
         }
         return count;
     }
+
     //method 2
     //description: count the Spaces in the given string
     public int countSpaces(String word){
@@ -120,7 +135,19 @@ public class Main {
             }
             return count;
         }
+        //method 4
+    // count number for the integration test gives the return value string value (int)
+    public String countNumbersINT(String word){
+        int count =0;
+        char[] wordChars=word.toCharArray();
+        for(char chr: wordChars){
+            if(chr=='1'||chr=='2'||chr=='3'||chr=='4'||chr=='5'||chr=='6'||chr=='7'||chr=='8'||chr=='9'||chr=='0') {
+                count = count + 1;
 
+            }
+        }
+        return String.valueOf(count);
+    }
     //Author: Sai Nikhil
     //Description: count words starting with vowels. Test: countWordsStartingWithVowels()
     //Method 1

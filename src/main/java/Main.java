@@ -40,7 +40,22 @@ public class Main {
 
         return count;
     }
-    //sairam chikkala
+    //Author:Daniel Pliego Gonzalez
+    //same method of count Consonants with return type as Integer test :countConsonantsINT()
+    public String countConsonantsINT(String word) {
+        int count = 0;
+
+        char[] wordChars = word.toCharArray();
+
+        for (char chr : wordChars) {
+            if (chr != 'a' && chr != 'A' && chr != 'e' && chr != 'E' && chr != 'i' && chr != 'I' && chr != 'o' && chr != 'O' && chr != 'u' && chr != 'U') {
+                count = count + 1;
+            }
+        }
+
+        return String.valueOf(count);
+    }
+    //Author:Naga veera sai ram chikkala
     //method 1
     // description: count the uppercases here test: testCountUpperCase()
     public int countUpperCase(String word){
@@ -53,6 +68,7 @@ public class Main {
         }
         return count;
     }
+    //Author:Naga veera sai ram chikkala
     //method 2
     // description: count the uppercases integer with return value StringValue(int)
     public String countUpperCaseINT(String word){
@@ -65,6 +81,7 @@ public class Main {
         }
         return String.valueOf(count);
     }
+    //Author:Naga veera sai ram chikkala
     //method 3
     //description : this method  counts the number of lowercases in a string test: testCountLowerCase()
     public int countLowerCase(String word){
@@ -77,6 +94,7 @@ public class Main {
         }
         return count;
     }
+    //Author:Naga veera sai ram chikkala
     //method 4
     //description: this method counts the number of alphabet A and a test:testCountOnlyA()
     public int countOnlyA(String word){
@@ -95,7 +113,7 @@ public class Main {
         }
         return count;
     }
-    //lakshmi srinidh
+    //Author: lakshmi srinidh
     //method 1
     //description: count the number in the given string
     public int countNumbers(String word){
@@ -109,7 +127,7 @@ public class Main {
         }
         return count;
     }
-
+    //Author: lakshmi srinidh
     //method 2
     //description: count the Spaces in the given string
     public int countSpaces(String word){
@@ -123,6 +141,7 @@ public class Main {
         }
         return count;
     }
+    //Author: lakshmi srinidh
     //method 3
     //description: count the special character in the given string
     public int countSpecialSymbols(String word){
@@ -135,6 +154,7 @@ public class Main {
             }
             return count;
         }
+        //Author: lakshmi srinidh
         //method 4
     // count number for the integration test gives the return value string value (int)
     public String countNumbersINT(String word){
@@ -206,6 +226,7 @@ public class Main {
 
         return count;
     }
+    //Author: Sai Nikhil
     // Method 2
     //Description: counting number of reverse vowels. Test: reverseVowelCount()
     public int reverseVowelCount(String vowels){
@@ -232,6 +253,7 @@ public class Main {
         return reverseVowel.length();
 
     }
+    //Author: Sai Nikhil
     //Method 3
     //Description: Returning the count of 'b' Test:countOnlyB()
     public int countOnlyB(String word){
@@ -252,6 +274,27 @@ public class Main {
             }
         }
         return count;
+    }
+    //Author: Sai Nikhil
+    //Description: Returning the count of 'b' Test:countOnlyB()
+    public String countOnlyBINT(String word){
+        //temp storing string
+        String _word = word;
+        //initial count
+        int count = 0;
+        //temp char type to hold value
+        char tempChar;
+
+        for (int i = 0; i< _word.length(); i++){
+            //getting value @ index of i and storing it
+            tempChar = _word.charAt(i);
+
+            //comparing and counting
+            if(tempChar == 'B' || tempChar == 'b'){
+                count++;
+            }
+        }
+        return String.valueOf(count);
     }
 }
 

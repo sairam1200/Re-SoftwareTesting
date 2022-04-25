@@ -44,14 +44,22 @@ public class TestMain {
         main = new Main();
         assertEquals(main.lengthWord("great"), main.countConsonants("great") + main.countVowels("great"));
     }
-
-    //sai ram chikkala
+    //Integration test 2
+    //description : lengthWord() and the countConsonantsINT() integration test
+    @Test
+    public void testlengthandcountConsonants() {
+        main = new Main();
+        assertEquals(1,main.lengthWord( main.countConsonantsINT("great")));
+    }
+    //Author:Naga veera sai ram chikkala
+    //test  case 1
     // test case on the count uppercase test: testCountUpperCase()
     @Test
     public void testCountUpperCase(){
         main =new Main();
         assertEquals(2,main.countUpperCase("Hello Man"));
     }
+    //Author:Naga veera sai ram chikkala
     //test case 2
     //this test case consits of the count of lower cases test: testCountLowerCase()
     @Test
@@ -59,6 +67,7 @@ public class TestMain {
         main =new Main();
         assertEquals(4,main.countLowerCase("SaiRam"));
     }
+    //Author:Naga veera sai ram chikkala
    //test case 3
     //this test case consits of the count of the alphabet only A and a   test:testCountOnlyA()
     @Test
@@ -66,9 +75,10 @@ public class TestMain {
         main= new Main();
         assertEquals(2,main.countOnlyA("Hello man where are you?"));
     }
+    //Author:Naga veera sai ram chikkala
     //integration testcases
     //test case 1
-    //Description :test on both length word and upper case  Test: testLengthAndUpperCase
+    //Description :test on both lengthword() and uppercaseINT()  Test: testLengthAndUpperCase
     @Test
     public void testLengthAndUpperCase(){
         main =new Main();
@@ -82,7 +92,7 @@ public class TestMain {
         main= new Main();
         assertEquals(5,main.countNumbers("alpha12345"));
     }
-
+    //Author: lakshmi srinidh
     //test case 2
     // count the spaces in the given string test : testcountSpaces()
     @Test
@@ -90,6 +100,7 @@ public class TestMain {
         main=new Main();
         assertEquals(3,main.countSpaces("i am lakshmi srinidh"));
     }
+    //Author: lakshmi srinidh
     //test case 3
     //count the special symbols in the given string test : testSpecialSymbols()
     @Test
@@ -97,8 +108,9 @@ public class TestMain {
         main=new Main();
         assertEquals(4,main.countSpecialSymbols("alpha,sre,@/"));
     }
+    //Author: lakshmi srinidh
     //integration test case 1
-    // test the integration numbers test: testintNumbers()
+    // test the integration between countNumbersINT() and countNumbers() test: testintNumbers()
     @Test
     public void testintNumbers(){
         main=new Main();
@@ -125,10 +137,17 @@ public class TestMain {
         main = new Main();
         assertEquals(1,main.countOnlyB("bat"));
     }
-    //Integration test
+    //Integration test 1
     @Test
     public void testNumbersAndSpecialSymbols(){
         main = new Main();
         assertEquals(main.lengthWord("hewill"), main.countNumbers("1234")+main.countSpecialSymbols("@#,"));
+    }
+    //integration test 2
+    //integration between functions CountonlyBINT() and lenghtWord()
+    @Test
+    public void testLengthandcountonlyB(){
+        main = new Main();
+        assertEquals(1,main.lengthWord(main.countOnlyBINT("Bat and Ball")));
     }
 }

@@ -224,7 +224,7 @@ public class Main {
                 count++;
             }
         }
-        return count;
+        return 0;
     }
 }
 

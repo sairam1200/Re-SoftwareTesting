@@ -128,6 +128,6 @@ public class TestMain {
     @Test
     public void testNumbersAndSpecialSymbols(){
         main = new Main();
-        assertEquals(main.lengthWord("he will"), main.countNumbers("1234")+main.countSpecialSymbols("@#,"));
+        assertEquals(main.lengthWord("hewill"), main.countNumbers("1234")+main.countSpecialSymbols("@#,"));
     }
 }
